@@ -1,9 +1,11 @@
+echo WELCOME TO LINUX SHORTCUT PROGRAMS 
+#if you want to change any commands you can configure it by changing value of commands or by changing the condition of if block 
 
 echo enter your code to open commands
 read a
 
 if [ $a -eq 0 ]; then
-shutdown 10
+/sbin/shutdown -h -t sec 30
 
 elif [ $a -eq 1 ] ; then
 sudo apt-get update
@@ -22,4 +24,3 @@ elif [ $a -eq 5 ]; then
 opera
 
 fi
-
