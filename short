@@ -27,7 +27,7 @@ elif [ $a -eq 4 ]; then
 	firefox &
 
 elif [ $a -eq 5 ]; then
-	chrome &
+	google-chrome &
 
 elif [ $a -eq 6 ]; then
 	opera &
