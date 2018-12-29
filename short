@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+echo "WELCOME TO LINUX SHORTCUT PROGRAMS" 
+#if you want to change any commands you can configure it by changing value of commands or by changing the condition of if block 
+echo "0.Shutdown";
+echo "1.Update & Upgrade";
+echo "2.Jupyter Notebook";
+echo "3.Gedit";
+echo "4.Firefox";
+echo "5.Chrome";
+echo "6.Opera";
+echo -n "Enter your code to open commands : ";
+read a;
+
+if [ $a -eq 0 ]; then
+	/sbin/shutdown -h now
+
+elif [ $a -eq 1 ] ; then
+	sudo apt-get update && sudo apt-get upgrade
+
+elif [ $a -eq 2 ]; then 
+	jupyter notebook
+
+elif [ $a -eq 3 ]; then 
+	gedit &
+
+elif [ $a -eq 4 ]; then
+	firefox &
+
+elif [ $a -eq 5 ]; then
+	chrome &
+
+elif [ $a -eq 6 ]; then
+	opera &
+fi
